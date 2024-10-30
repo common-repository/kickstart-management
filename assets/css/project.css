@@ -1,0 +1,159 @@
+body{
+	background: #efefef!important; /* Old browsers */
+  color: #000000;
+  background-size: cover;
+  font-family: "Georgia";
+}
+.jumbotron,table{
+	background: #feffff; /* Old browsers */
+  background: -moz-linear-gradient(top, #feffff 0%, #d2ebf9 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #feffff 0%,#d2ebf9 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #feffff 0%,#d2ebf9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#d2ebf9',GradientType=0 ); /* IE6-9 */
+	border-radius :20px;   
+	color: #000000;	
+	text-align: center;
+	align-items: center;
+}
+table{
+  border: none!important;
+}
+ul li a{
+  color: #1295C9;
+  font-family: Arial;
+}
+ul li a:hover{
+  font-weight: bold;
+}
+.projlong{
+  max-height:100px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.btn-info{
+  padding: 2%!important;
+}
+.title{
+    text-align: center;
+    color: #1295C9;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+ul li a:active{
+  font-weight: bold;
+  color : #000000;
+  background: #efefef;
+}
+textarea{
+  width: 100%!important;
+}
+.col-1{
+  max-width:20px!important;
+}
+.su{
+	background-color: #05E177!important;
+}
+.da{
+	background-color: #B9080E!important;
+}
+td,tr,table{
+	border:none;
+}
+.tableproject, .tabletask{
+  min-height : 450px;
+}
+thead{
+  font-family: Georgia;
+	color: white;
+	background-color: black!important;
+}
+h1{
+	  text-align: center;
+    color: #1295C9!important;
+    font-weight: bold!important;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.btn{
+	cursor: pointer;
+	font-weight: bold;
+	padding: 5px;
+	font-size:1em;
+	background-color:#ffffff!important; 
+	color:#000000!important;
+}
+button:hover{
+	background-color:#000000!important; 
+	color:#CCCCCC!important;
+}
+
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 1.95em;
+  cursor: pointer;
+}
+
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0;
+  width: 1.25em; height: 1.25em;
+  border: 2px solid #ccc;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,.1);
+}
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  content: '✔';
+  position: absolute;
+  top: .2em; left: .275em;
+  font-size: 1.4em;
+  line-height: 0.8;
+  color: #1295C9;
+  transition: all .2s;
+  font-family: Helvetica, Arial, sans-serif;
+}
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+/* disabled checkbox */
+[type="checkbox"]:disabled:not(:checked) + label:before,
+[type="checkbox"]:disabled:checked + label:before {
+  box-shadow: none;
+  border-color: #bbb;
+  background-color: #ddd;
+}
+[type="checkbox"]:disabled:checked + label:after {
+  color: #999;
+}
+[type="checkbox"]:disabled + label {
+  color: #aaa;
+}
+/* accessibility */
+[type="checkbox"]:checked:focus + label:before,
+[type="checkbox"]:not(:checked):focus + label:before {
+  border: 2px dotted blue;
+}
+
+/* hover style just for information */
+label:hover:before {
+  border: 2px solid #4778d9!important;
+}
